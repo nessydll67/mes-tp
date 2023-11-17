@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+//Écrire un programme qui vérifie si un nombre saisi par l'utilisateur est pair ou impair.
+
+void main()
+{
+int nombre,resultat;
+printf("Donner le nombre : ");
+scanf("%d",&nombre);
+resultat=nombre%2;
+if(resultat==0){printf("%d est pair",nombre);}
+else{printf("%d est impair",nombre);}
+}

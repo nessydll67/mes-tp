@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void chiffrementCesar(char message[], int decalage) {
+    int i;
+
+    for (i = 0; message[i] != '\0'; ++i) {
+        char caractere = message[i];
+
+        if (caractere >= 'A' && caractere <= 'Z') {
+            // Chiffrement pour les majuscules
+            message[i] = (caractere - 'A' + decalage) % 26 + 'A';
+        } else if (caractere >= 'a' && caractere <= 'z') {
+            // Chiffrement pour les minuscules
+            message[i] = (caractere - 'a' + decalage) % 26 + 'a';
+        }
+        // Ne rien faire pour les caractères qui ne sont pas des lettres
+    }
+}
+
+int main() {
+    char message[100];
+    int decalage;
+
+    // Demander à l'utilisateur de saisir un message clair
+    printf("Veuillez saisir un message clair : ");
+    scanf("%99[^\n]", message);  // Lire la ligne entière jusqu'à la nouvelle ligne
+
+    // Demander à l'utilisateur de saisir un décalage
+    printf("Veuillez saisir un décalage pour le chiffrement de César : ");
+    scanf("%d", &decalage);
+
+    // Chiffrer le message
+    chiffrementCesar(message, decalage);
+
+    // Afficher le message chiffré
+    printf("Message chiffré : %s\n", message);
+
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+//Écrire un programme qui demande à l'utilisateur son nom, puis affiche un message de bienvenue avec son nom.
+
+void main()
+{
+float nombre_1,nombre_2,somme;
+printf("Donner deux nombres : \n");
+printf("a=");
+scanf("%f",&nombre_1);
+printf("b=");
+scanf("%f",&nombre_2);
+somme=nombre_1+nombre_2;
+printf("La somme est : %f",somme);
+}

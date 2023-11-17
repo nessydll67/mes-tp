@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+//Écrire un programme qui trouve le plus grand nombre dans un tableau d'entiers.
+
+void main()
+{
+int k,max,entier[5]={7,3,4,2,8};
+max=0;
+for(k=0;k<5;k++){
+if(max<entier[k]){max=entier[k];}
+}
+printf("Le plus grand nombre est %d",max);
+}
+

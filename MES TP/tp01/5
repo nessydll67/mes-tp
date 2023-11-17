@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+//Créez un tableau de 5 entiers et initialisez-le avec des valeurs. Affichez ensuite ces valeurs.
+
+void main()
+{
+int u,entier[5]={3,5,8,9,6};
+
+for(u=0;u<5;u++){
+printf("%d",entier[u]);
+printf("\t");
+}
+}

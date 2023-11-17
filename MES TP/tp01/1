@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+//Écrire un programme qui demande à l'utilisateur son nom, puis affiche un message de bienvenue avec le nom.
+
+void main()
+{
+char nom[100];
+printf("Donner votre nom : ");
+scanf("%s",&nom);
+printf("Bienvenue %s",nom);
+}
